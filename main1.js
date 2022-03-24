@@ -16,7 +16,7 @@ function capture(){
 }
 console.log("ml5version-",ml5.version);
 
-classifer = ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/T_y9wMWpq/model.json", modelloaded); 
+classifer = ml5.imageClassifier(" https://teachablemachine.withgoogle.com/models/iNFovKhzq/model.json", modelloaded); 
 function modelloaded(){
     console.log("modelloaded");
 }
@@ -33,8 +33,8 @@ function gotresult(error,results){
        }
        else{
            console.log(results);
-           document.getElementById("obj_name").innerHTML=results[0].label;
-           document.getElementById("Accuracy").innerHTML=results[0].confidence.toFixed(2);
+           document.getElementById("name").innerHTML = results[0].label;
+           document.getElementById("Accuracy").innerHTML = results[0].confidence.toFixed(2);
 
        }
    
